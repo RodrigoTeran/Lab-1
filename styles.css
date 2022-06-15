@@ -1,0 +1,342 @@
+nav {
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--lavender-100);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+    }
+}
+
+nav h1 {
+    color:  var( --lavender-300);
+}
+
+nav button {
+    color:  var( --lavender-200);
+    padding: 10px 20px;
+    border: 1px solid var( --lavender-200);
+    border-radius: 5px;
+    background-color: #FFF;
+    cursor: pointer;
+    transition: background-color ease-out 300ms, color ease-out 300ms;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    nav button:hover {
+        color:  #FFF;
+        background-color: var( --lavender-200);
+    }   
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 100px;
+}
+
+header .content div {
+    display: flex;
+    gap: 20px;
+}
+
+header .content button {
+    color:  var( --lavender-200);
+    padding: 10px 20px;
+    border: 1px solid var( --lavender-200);
+    border-radius: 500px;
+    background-color: #FFF;
+    cursor: pointer;
+    width: 140px;
+    transition: background-color ease-out 300ms, color ease-out 300ms;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    header .content button:hover {
+        color:  #FFF;
+        background-color: var( --lavender-200);
+    }
+}
+
+header .content .btn-1 {
+    color:  #FFF;
+    background-color: var( --lavender-200);
+}
+
+@media (hover:hover) and (pointer:fine) {
+    header .content .btn-1:hover {
+        color:  var( --lavender-200);
+        background-color: #FFF;
+    }   
+}
+
+header .content h1 {
+    font-size: 10vw;
+    color: var(--lavender-300);
+    margin: 0;
+    margin-bottom: 20px
+}
+
+header .content h2 {
+    color: var(--lavender-200);
+    margin: 0;
+    margin-bottom: 20px
+}
+
+header section img {
+    object-fit: contain;
+    display: block;
+    width: 330px;
+}
+
+@media screen and (max-width: 1050px) {
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        padding-top: 120px;
+        gap: 50px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    header .content {
+        width: 100%;
+    }
+    .content_btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    header .content button {
+       width: 100%;
+    }
+    header section img {
+        width: 90%;
+        margin-left: 5%
+    }
+}
+
+.block {
+    padding: 0 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.block h3 {
+    font-size: 3rem;
+    color: var(--lavender-500);
+}
+
+.block_p {
+    position: relative;
+    height: 50px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.block_p p {
+    margin-left: 35px;
+}
+
+.block_p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 100%;
+    background-color: var(--gray-100);
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_img {
+    position: relative;
+}
+
+.about_img img {
+    width: 300px;
+    margin-right: 30px;
+    transition: transform ease-out 300ms;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    .about_img img:hover {
+        transform: translate(20px, -20px);
+
+    }   
+}
+
+.about_img span {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: -25px;
+    right: 0;
+    border: 6px solid var(--lavender-400);
+}
+
+@media screen and (max-width: 1260px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+    .about_div {
+        width: 100%;
+    }
+    .block h3 {
+        text-align: center;
+    }
+    .block span {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    .about_img span {
+        display: none;
+    }
+    .block_p {
+        width: 90%;
+    }
+    .about_img img {
+        margin-right: 0;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .about_div {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .block_p p {
+        margin-left: 0;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+    .block_p {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+    .block {
+        padding: 0 10px;
+    }
+    .block_p::before {
+        display: none;
+    }
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+ .container {
+     justify-content: center;
+ }   
+}
+
+.card {
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0px 15px rgba(122, 122, 122, 0.25);
+    width: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    transition: transform ease-out 300ms;
+    text-align: center;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    .card:hover {
+        transform: translateY(-20px);
+
+    }   
+}
+
+.card::before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 3px, 0 3px);
+    z-index: 1;
+    left: 0;
+    top: 0px;
+    border-radius: 5px;
+    background-color: var(--lavender-300);
+}
+
+.phantom {
+    position: absolute;
+    z-index: -1;
+    top: 200px;
+    right: 0;
+}
+
+.phantom img {
+    width: 450px;
+}
+
+@media screen and (max-width: 500px) {
+    .phantom {
+        top: 350px;
+    }
+    .phantom img {
+        width: 250px;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact svg {
+    fill: var(--lavender-300);
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .contact {
+        justify-content: center;
+    }
+}
