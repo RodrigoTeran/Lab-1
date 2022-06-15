@@ -25,14 +25,14 @@ nav button {
     padding: 10px 20px;
     border: 1px solid var( --lavender-200);
     border-radius: 5px;
-    background-color: #FFF;
+    background-color: var(--white);
     cursor: pointer;
     transition: background-color ease-out 300ms, color ease-out 300ms;
 }
 
 @media (hover:hover) and (pointer:fine) {
     nav button:hover {
-        color:  #FFF;
+        color:  var(--white);
         background-color: var( --lavender-200);
     }   
 }
@@ -56,7 +56,7 @@ header .content button {
     padding: 10px 20px;
     border: 1px solid var( --lavender-200);
     border-radius: 500px;
-    background-color: #FFF;
+    background-color: var(--white);
     cursor: pointer;
     width: 140px;
     transition: background-color ease-out 300ms, color ease-out 300ms;
@@ -64,20 +64,20 @@ header .content button {
 
 @media (hover:hover) and (pointer:fine) {
     header .content button:hover {
-        color:  #FFF;
+        color:  var(--white);
         background-color: var( --lavender-200);
     }
 }
 
 header .content .btn-1 {
-    color:  #FFF;
+    color:  var(--white);
     background-color: var( --lavender-200);
 }
 
 @media (hover:hover) and (pointer:fine) {
     header .content .btn-1:hover {
         color:  var( --lavender-200);
-        background-color: #FFF;
+        background-color: var(--white);
     }   
 }
 
@@ -270,7 +270,7 @@ header section img {
 
 .card {
     border-radius: 0 0 5px 5px;
-    box-shadow: 0px 0px 15px rgba(122, 122, 122, 0.25);
+    box-shadow: 0px 0px 15px var(--gray-200);
     width: 225px;
     display: flex;
     justify-content: center;
